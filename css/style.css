@@ -8,12 +8,21 @@ html,body{
     font-family: Helvetica, sans-serif, arial;
     font-size: 16px;
     color: white;
+	overflow-x: hidden;
 }
 
-.container{
+/*.container{
     width: 1050px;
     margin: 0px auto;
     display: table;
+}*/
+
+.container{
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 0 15px;
 }
 
 .top-header {
@@ -133,12 +142,19 @@ nav a{
     top: -8px;
 }
 
-.about-us div {
+/*.about-us div {
 	width:45%;
 	float:left;
 	line-height:30px;
 	font-size:18px;
+}*/
+
+.about-us div.why div {
+	width:100%;
+	float:none;
+	display:block;
 }
+
 .about-us h4 {
     font-size: 18px;
     color: red;
@@ -151,10 +167,16 @@ nav a{
     line-height: 23px;
 	color:black;
 }
-.about-us img {
+/*.about-us img {
 	width:48%;
     height: 350px;
 	float:left;
+}*/
+
+.about-us img .why img {
+	width:100%;
+    height: auto;
+	float:none;
 }
 
 .why div {
@@ -176,13 +198,20 @@ nav a{
 	color:black;
 }
 
-.facility {
+/*.facility {
 	width:24%;
 	margin-right:1%;
 	float: left;
 	background-color: #fff;
 	border:1px solid #FF5722;
+}*/
+
+.facility {
+	width:100%;
+	margin-bottom:20px;
+	float: none;
 }
+
 .facility div{
     padding: 10px;
 }
@@ -262,4 +291,20 @@ nav a{
 	text-decoration: none;
 	color: #fff;
     float: right;
+}
+
+@media (min-width: 768px){
+	.about-us div, .why div{
+		width:45%;
+		float:left;
+	}
+	.about-us img, .why img{
+		width:48%;
+		float:left;
+	}
+	.facility {
+		width:24%;
+		float:left;
+		margin-right:1%;
+	}
 }
