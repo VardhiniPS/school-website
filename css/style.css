@@ -147,14 +147,15 @@ nav a:hover {
     top: -8px;
 }
 .about-container{
-    width: 100%;
-    float: left;
+	width: 100%;
+	display:flex;
+	position: relative;
     padding: 50px 0px 30px 0px;
     background: #FFF9C4;
 }
 .about-us{
-    width:45%;
-	float:left;
+	width:45%;
+	position: relative;
 	line-height:30px;
 	font-size:18px;
     margin: 0px auto;
@@ -352,4 +353,98 @@ nav a:hover {
 .footer-menu li a {
 	text-decoration: none;
 	color: white
+}
+@media (max-width: 768px) {
+
+    .top-header {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    .top-header b {
+        display: block;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-left: 0;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .slider img {
+        margin-top: 140px;
+        width: 100%;
+        height: auto;
+		display: block;
+    }
+
+    .about-container {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .about-us, .about-container img {
+        width: 100%;
+        margin-left: 0;
+        float: none;
+    }
+
+    .why p, .about-us p {
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .facilities {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .facility {
+        padding: 0;
+    }
+
+    .notice-board {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-inner {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    #crayons_logo_image {
+        position: static;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-menu li {
+        width: 100%;
+    }
 }
