@@ -73,6 +73,11 @@ nav a:hover {
 	width:100%;
     margin-top: 80px;
 }
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 .data-container{
     width: 100%;
     height: auto;
@@ -448,3 +453,4 @@ nav a:hover {
         width: 100%;
     }
 }
+
